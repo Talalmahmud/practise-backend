@@ -6,6 +6,6 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3001, () => {
-  console.log(`Server is running:http://localhost:${3001}`);
+  console.log(`Server is running on:http://localhost:${3001}`);
 });
 export default app;
