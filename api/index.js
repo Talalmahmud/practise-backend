@@ -3,7 +3,7 @@ import userRoute from "./routes/user.js";
 const app = express();
 
 app.use("/api/v1", userRoute);
-app.get("/", (req, res) => {
+app.get("*", (req, res,err) => {
   res.status(200).json({ message: "Hello" });
 });
 
